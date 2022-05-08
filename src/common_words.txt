@@ -1,0 +1,7 @@
+settings
+admin
+index
+security
+login
+password
+hidden
